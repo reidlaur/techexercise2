@@ -1,0 +1,46 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background-color: #2080C0;
+    color: black;
+    text-align: left;
+}
+
+h1{
+	font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: repeat(5, 20em);
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container div{
+    //the child
+    padding: 50px;
+    margin: 10px;
+    flex: 0 1 10em;
+    // item property flex: flex-grow flex-shrink flex-basis;
+}
+
+.boxen{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 960px) {
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+}
+
